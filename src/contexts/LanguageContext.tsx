@@ -57,6 +57,11 @@ const translations = {
     "footer.quickLinks": "Quick Links",
     "footer.social": "Follow Me",
     "footer.rights": "All rights reserved.",
+    "footer.connect": "Connect & Follow",
+    "footer.connectDescription":
+      "Stay updated with the latest projects and content",
+    "footer.bye":
+      "Bridging the gap between complex engineering solutions and accessible learning. Building the future, one line of code at a time",
   },
   es: {
     // Navigation
@@ -107,6 +112,11 @@ const translations = {
     "footer.quickLinks": "Enlaces Rápidos",
     "footer.social": "Sígueme",
     "footer.rights": "Todos los derechos reservados.",
+    "footer.connect": "Conectar y seguir",
+    "footer.connectDescription":
+      "Mantente actualizado con los últimos proyectos y contenido",
+    "footer.bye":
+      "Rompiendo barreras entre la ingeniería y el mundo onírico. Creando el futuro, una linea de código a la vez",
   },
 };
 

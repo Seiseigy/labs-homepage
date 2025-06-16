@@ -1,0 +1,156 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 220 13% 9%;
+    --foreground: 300 20% 96%;
+
+    --card: 224 17% 12%;
+    --card-foreground: 300 20% 96%;
+
+    --popover: 224 17% 12%;
+    --popover-foreground: 300 20% 96%;
+
+    --primary: 267 84% 81%;
+    --primary-foreground: 220 13% 9%;
+
+    --secondary: 260 15% 15%;
+    --secondary-foreground: 300 20% 96%;
+
+    --muted: 260 15% 15%;
+    --muted-foreground: 267 14% 70%;
+
+    --accent: 267 84% 81%;
+    --accent-foreground: 220 13% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 260 15% 20%;
+    --input: 260 15% 20%;
+    --ring: 267 84% 81%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 13% 9%;
+    --sidebar-foreground: 300 20% 96%;
+    --sidebar-primary: 267 84% 81%;
+    --sidebar-primary-foreground: 220 13% 9%;
+    --sidebar-accent: 260 15% 15%;
+    --sidebar-accent-foreground: 300 20% 96%;
+    --sidebar-border: 260 15% 20%;
+    --sidebar-ring: 267 84% 81%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a0033 35%, #2d1b69 100%);
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    background: linear-gradient(135deg, #d8b4fe 0%, #a855f7 50%, #9333ea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-morphism {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .scroll-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .scroll-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Subtle Neon Effects - Fixed to prevent line artifacts */
+  .neon-glow-subtle {
+    box-shadow: 
+      0 0 15px rgba(168, 85, 247, 0.2),
+      0 0 30px rgba(168, 85, 247, 0.1);
+  }
+
+  .neon-border-subtle {
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    box-shadow: 
+      0 0 8px rgba(168, 85, 247, 0.15),
+      inset 0 0 8px rgba(168, 85, 247, 0.05);
+  }
+
+  .neon-text-glow {
+    text-shadow: 
+      0 0 10px rgba(168, 85, 247, 0.4),
+      0 0 20px rgba(168, 85, 247, 0.2);
+  }
+
+  .neon-text-subtle {
+    text-shadow: 
+      0 0 5px rgba(168, 85, 247, 0.2);
+  }
+
+  .neon-button-subtle {
+    box-shadow: 
+      0 0 8px rgba(168, 85, 247, 0.2),
+      0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .neon-button-subtle:hover {
+    box-shadow: 
+      0 0 12px rgba(168, 85, 247, 0.3),
+      0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .neon-icon {
+    filter: drop-shadow(0 0 4px rgba(168, 85, 247, 0.3));
+  }
+
+  /* Gradient borders */
+  .gradient-border {
+    border: 1px solid transparent;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2)) padding-box,
+                linear-gradient(135deg, #a855f7, #ec4899) border-box;
+  }
+
+  /* Enhanced animations */
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 
+        0 0 15px rgba(168, 85, 247, 0.3);
+    }
+    50% {
+      box-shadow: 
+        0 0 25px rgba(168, 85, 247, 0.5);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+}

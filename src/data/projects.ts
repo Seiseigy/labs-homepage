@@ -10,7 +10,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop",
     technologies: ["React", "Tailwind", "TypeScript", "i18next"],
     githubUrl: "https://github.com/Seiseigy/labs-homepage",
-    liveUrl: "https://github.com/Seiseigy/labs-homepage",
+    liveUrl: "https://seilabs.org",
     featured: true,
   },
   {
@@ -21,7 +21,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop",
     technologies: ["React", "Tailwind", "TypeScript", "i18next"],
     githubUrl: "https://github.com/Seiseigy/labs-homepage",
-    liveUrl: "https://github.com/Seiseigy/labs-homepage",
+    liveUrl: "https://seilabs.org",
     featured: true,
   },
   {
@@ -32,7 +32,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop",
     technologies: ["React", "Tailwind", "TypeScript", "i18next"],
     githubUrl: "https://github.com/Seiseigy/labs-homepage",
-    liveUrl: "https://github.com/Seiseigy/labs-homepage",
+    liveUrl: "https://seilabs.org",
     featured: true,
   },
   {
@@ -43,7 +43,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop",
     technologies: ["React", "Tailwind", "TypeScript", "i18next"],
     githubUrl: "https://github.com/Seiseigy/labs-homepage",
-    liveUrl: "https://github.com/Seiseigy/labs-homepage",
+    liveUrl: "https://seilabs.org",
     featured: true,
   },
 ];

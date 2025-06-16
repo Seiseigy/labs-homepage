@@ -1,14 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import {
-  Github,
-  Instagram,
-  Facebook,
-  Youtube,
-  Mail,
-  Globe,
-  ArrowLeft,
-} from "lucide-react";
+import { Github, Instagram, Youtube, Mail, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Links = () => {
@@ -46,6 +38,13 @@ const Links = () => {
       url: "https://tiktok.com/@sei.codes",
       color: "hover:bg-white/10 border-white/50",
       description: "Quick tech tips & coding shorts",
+    },
+    {
+      name: "SeiLabs",
+      icon: Globe,
+      url: "https://seilabs.org",
+      color: "hover:bg-blue-700/20 border-blue-600/50",
+      description: "Visit our official website and visit our projects",
     },
     {
       name: "Contact",
